@@ -159,7 +159,7 @@
             "condition": ""
           }
         ],
-        "inventory": []
+        "inventory": ["mailbox"]
       },
       "NHOUS": {
         "name": "North of House",
