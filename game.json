@@ -11,12 +11,15 @@
       { "v": "BACK",       "map": "BACK"  },
       { "v": "BUY",       "map": "BUY"  },
       { "v": "FRIDGE",   "map": "FRIDGE"},
-      { "v": "WATCH",       "map": "TV"  },
+      { "v": "ON",  "map": "TV" },
       { "v": "SLEEP",       "map": "SLEEP"  },
       { "v": "BED",       "map": "BED"  },
       { "v": "LIVINGROOM",       "map": "LIVINGROOM"  },
       { "v": "BEDROOM",       "map": "BEDROOM"  },
-      { "v": "KITCHEN",       "map": "KITCHEN"  }
+      { "v": "KITCHEN",       "map": "KITCHEN"  },
+      { "v": "PIZZA",       "map": "PIZZA"  },
+      { "v": "BURGER",       "map": "BURGER"  }
+
     ],
 
     "rooms": {
@@ -154,7 +157,7 @@
         },
         "KITCHEN": {
           "name": "Kitchen",
-          "desc": "You feel a little hungry. \n There is food in the fridge.",
+          "desc": "You feel a little hungry. \nThere is food in the fridge.",
           "exits": [
             {
               "verb": "BACK",
@@ -176,7 +179,7 @@
         },
         "LIVINGROOM": {
           "name": "Living Room",
-          "desc": "You sit on your couch. \n The TV is off.",
+          "desc": "You sit on your couch. \nThe TV is off.",
           "exits": [
             {
               "verb": "BACK",
@@ -184,7 +187,7 @@
               "condition": ""
             },
             {
-              "verb": "WATCH",
+              "verb": "ON",
               "target": "TV",
               "condition": ""
             }
@@ -221,6 +224,11 @@
               "verb": "LIVINGROOM",
               "target": "LIVINGROOM",
               "condition": ""
+            },
+            {
+              "verb": "BEDROOM",
+              "target": "BEDROOM",
+              "condition": ""
             }
           ],
           "inventory": []
@@ -238,6 +246,11 @@
               "verb": "KITCHEN",
               "target": "KITCHEN",
               "condition": ""
+            },
+            {
+              "verb": "BEDROOM",
+              "target": "BEDROOM",
+              "condition": ""
             }
           ],
           "inventory": []
@@ -250,7 +263,7 @@
         },
         "CITY": {
           "name": "City",
-          "desc": "You start to feel hungry.",
+          "desc": "You look around the town.",
           "exits": [
             {
               "verb": "BACK",
@@ -265,6 +278,67 @@
             {
               "verb": "RIGHT",
               "target": "PIZZA",
+              "condition": ""
+            },
+            {
+              "verb": "PIZZA",
+              "target": "PIZZA",
+              "condition": ""
+            },
+            {
+              "verb": "BURGER",
+              "target": "BURGER",
+              "condition": ""
+            }
+          ],
+          "inventory": []
+        },
+        "BURGER": {
+          "name": "Burger Town",
+          "desc": "You look at the menu for what you can buy.",
+          "exits": [
+            {
+              "verb": "BACK",
+              "target": "CITY",
+              "condition": ""
+            },
+            {
+              "verb": "BUY",
+              "target": "BUY",
+              "condition": ""
+            }
+          ],
+          "inventory": []
+        },
+        "PIZZA": {
+          "name": "Pizza Palace",
+          "desc": "You look at the menu to see what to buy.",
+          "exits": [
+            {
+              "verb": "BACK",
+              "target": "CITY",
+              "condition": ""
+            },
+            {
+              "verb": "BUY",
+              "target": "BUY",
+              "condition": ""
+            }
+          ],
+          "inventory": []
+        },
+        "BUY": {
+          "name": "Cash Register",
+          "desc": "You get what you want off the menu and head to the seeting area. \nYou can leave whenever you are finished.",
+          "exits": [
+            {
+              "verb": "BACK",
+              "target": "CITY",
+              "condition": ""
+            },
+            {
+              "verb": "LEAVE",
+              "target": "CITY",
               "condition": ""
             }
           ],
