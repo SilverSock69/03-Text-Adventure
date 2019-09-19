@@ -15,7 +15,8 @@
       { "v": "SLEEP",       "map": "SLEEP"  },
       { "v": "BED",       "map": "BED"  },
       { "v": "LIVINGROOM",       "map": "LIVINGROOM"  },
-      { "v": "BEDROOM",       "map": "BEDROOM"  }
+      { "v": "BEDROOM",       "map": "BEDROOM"  },
+      { "v": "KITCHEN",       "map": "KITCHEN"  }
     ],
 
     "rooms": {
@@ -114,7 +115,7 @@
         },
         "FIELD": {
           "name": "Field",
-          "desc": "Nothing is around you",
+          "desc": "Nothing is around you and the field is empty.",
           "exits": [
             {
               "verb": "BACK",
@@ -146,33 +147,6 @@
             {
               "verb": "RIGHT",
               "target": "LIVINGROOM",
-              "condition": ""
-            }
-          ],
-          "inventory": []
-        },
-        "CITY": {
-          "name": "City",
-          "desc": "You start to feel hungry.",
-          "exits": [
-            {
-              "verb": "BACK",
-              "target": "LOC4",
-              "condition": ""
-            },
-            {
-              "verb": "LEFT",
-              "target": "TOWER",
-              "condition": ""
-            },
-            {
-              "verb": "STRAIGHT",
-              "target": "STREET",
-              "condition": ""
-            },
-            {
-              "verb": "RIGHT",
-              "target": "BURGER",
               "condition": ""
             }
           ],
@@ -219,7 +193,7 @@
         },
         "BEDROOM": {
           "name": "Bedroom",
-          "desc": "You enter your bedroom. \n You are getting even more tired as your stare at your bed.",
+          "desc": "You are getting even more tired as your stare at your bed.",
           "exits": [
             {
               "verb": "BACK",
@@ -236,16 +210,61 @@
         },
         "FRIDGE": {
           "name": "Fridge",
-          "desc": "You look around in the fridge and pull out ",
+          "desc": "You pull out a snack and eat it.",
           "exits": [
             {
               "verb": "BACK",
-              "target": "HOME",
+              "target": "KITCHEN",
               "condition": ""
             },
             {
-              "verb": "SLEEP",
-              "target": "SLEEP",
+              "verb": "LIVINGROOM",
+              "target": "LIVINGROOM",
+              "condition": ""
+            }
+          ],
+          "inventory": []
+        },
+        "TV": {
+          "name": "Watching TV",
+          "desc": "You flip through a few channels but nothing good seems to be on",
+          "exits": [
+            {
+              "verb": "BACK",
+              "target": "LIVINGROOM",
+              "condition": ""
+            },
+            {
+              "verb": "KITCHEN",
+              "target": "KITCHEN",
+              "condition": ""
+            }
+          ],
+          "inventory": []
+        },
+        "SLEEP": {
+          "name": "Bed",
+          "desc": "You fall asleep and end your long day of work.",
+          "exits": [],
+          "inventory": []
+        },
+        "CITY": {
+          "name": "City",
+          "desc": "You start to feel hungry.",
+          "exits": [
+            {
+              "verb": "BACK",
+              "target": "LOC4",
+              "condition": ""
+            },
+            {
+              "verb": "LEFT",
+              "target": "BURGER",
+              "condition": ""
+            },
+            {
+              "verb": "RIGHT",
+              "target": "PIZZA",
               "condition": ""
             }
           ],
