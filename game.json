@@ -8,13 +8,20 @@
       { "v": "S",       "map": "STRAIGHT" },
       { "v": "RIGHT",    "map": "RIGHT"  },
       { "v": "R",       "map": "RIGHT"  },
-      { "v": "BACK",       "map": "BACK"  }
+      { "v": "BACK",       "map": "BACK"  },
+      { "v": "BUY",       "map": "BUY"  },
+      { "v": "FRIDGE",   "map": "FRIDGE"},
+      { "v": "WATCH",       "map": "TV"  },
+      { "v": "SLEEP",       "map": "SLEEP"  },
+      { "v": "BED",       "map": "BED"  },
+      { "v": "LIVINGROOM",       "map": "LIVINGROOM"  },
+      { "v": "BEDROOM",       "map": "BEDROOM"  }
     ],
 
     "rooms": {
       "START": {
         "name": "Starting place",
-        "desc": "This is the place to start!",
+        "desc": "This is the place to start! \n You can go left, right, or straight.",
         "exits": [
           {
             "verb": "LEFT",
@@ -35,7 +42,7 @@
         "inventory": []
       },
       "LOC2": {
-        "name": "Location 2",
+        "name": "Dirt Road",
         "desc": "You are headed to a field.",
         "exits": [
           {
@@ -45,7 +52,7 @@
           },
           {
             "verb": "RIGHT",
-            "target": "LOC2",
+            "target": "LOC3",
             "condition": ""
           },
           {
@@ -57,7 +64,7 @@
         "inventory": []
       },
       "LOC3": {
-        "name": "Location 2",
+        "name": "Sidewalk",
         "desc": "You are headed toward your house.",
         "exits": [
           {
@@ -84,7 +91,7 @@
         "inventory": []
       },
         "LOC4": {
-          "name": "Location 4",
+          "name": "Main Road",
           "desc": "You are headed towards the town.",
           "exits": [
             {
@@ -96,7 +103,7 @@
               "verb": "STRAIGHT",
               "target": "CITY",
               "condition": ""
-            }
+            },
             {
               "verb": "BACK",
               "target": "START",
@@ -107,7 +114,7 @@
         },
         "FIELD": {
           "name": "Field",
-          "desc": "You are inside the field of grass. /nNothing is around you",
+          "desc": "Nothing is around you",
           "exits": [
             {
               "verb": "BACK",
@@ -119,11 +126,26 @@
         },
         "HOME": {
           "name": "Home",
-          "desc": "You are right inside of your home. /nYou feel tired from a long day.",
+          "desc": "You feel tired from a long day.",
           "exits": [
             {
               "verb": "BACK",
               "target": "LOC3",
+              "condition": ""
+            },
+            {
+              "verb": "LEFT",
+              "target": "KITCHEN",
+              "condition": ""
+            },
+            {
+              "verb": "STRAIGHT",
+              "target": "BEDROOM",
+              "condition": ""
+            },
+            {
+              "verb": "RIGHT",
+              "target": "LIVINGROOM",
               "condition": ""
             }
           ],
@@ -131,11 +153,99 @@
         },
         "CITY": {
           "name": "City",
-          "desc": "You are in the city. /n You start to feel hungry.",
+          "desc": "You start to feel hungry.",
           "exits": [
             {
               "verb": "BACK",
               "target": "LOC4",
+              "condition": ""
+            },
+            {
+              "verb": "LEFT",
+              "target": "TOWER",
+              "condition": ""
+            },
+            {
+              "verb": "STRAIGHT",
+              "target": "STREET",
+              "condition": ""
+            },
+            {
+              "verb": "RIGHT",
+              "target": "BURGER",
+              "condition": ""
+            }
+          ],
+          "inventory": []
+        },
+        "KITCHEN": {
+          "name": "Kitchen",
+          "desc": "You feel a little hungry. \n There is food in the fridge.",
+          "exits": [
+            {
+              "verb": "BACK",
+              "target": "HOME",
+              "condition": ""
+            },
+            {
+              "verb": "FRIDGE",
+              "target": "FRIDGE",
+              "condition": ""
+            },
+            {
+              "verb": "LIVINGROOM",
+              "target": "LIVINGROOM",
+              "condition": ""
+            }
+          ],
+          "inventory": []
+        },
+        "LIVINGROOM": {
+          "name": "Living Room",
+          "desc": "You sit on your couch. \n The TV is off.",
+          "exits": [
+            {
+              "verb": "BACK",
+              "target": "HOME",
+              "condition": ""
+            },
+            {
+              "verb": "WATCH",
+              "target": "TV",
+              "condition": ""
+            }
+          ],
+          "inventory": []
+        },
+        "BEDROOM": {
+          "name": "Bedroom",
+          "desc": "You enter your bedroom. \n You are getting even more tired as your stare at your bed.",
+          "exits": [
+            {
+              "verb": "BACK",
+              "target": "HOME",
+              "condition": ""
+            },
+            {
+              "verb": "SLEEP",
+              "target": "SLEEP",
+              "condition": ""
+            }
+          ],
+          "inventory": []
+        },
+        "FRIDGE": {
+          "name": "Fridge",
+          "desc": "You look around in the fridge and pull out ",
+          "exits": [
+            {
+              "verb": "BACK",
+              "target": "HOME",
+              "condition": ""
+            },
+            {
+              "verb": "SLEEP",
+              "target": "SLEEP",
               "condition": ""
             }
           ],
