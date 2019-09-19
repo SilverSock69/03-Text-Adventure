@@ -2,14 +2,13 @@
     "verbs": [
       { "v": "EXITS",   "map": "EXITS" },
       { "v": "QUIT",    "map": "QUIT"  },
-      { "v": "NORTH",   "map": "NORTH" },
-      { "v": "N",       "map": "NORTH" },
-      { "v": "SOUTH",   "map": "SOUTH" },
-      { "v": "S",       "map": "SOUTH" },
-      { "v": "EAST",    "map": "EAST"  },
-      { "v": "E",       "map": "EAST"  },
-      { "v": "WEST",    "map": "WEST"  },
-      { "v": "W",       "map": "WEST"  }
+      { "v": "LEFT",   "map": "LEFT" },
+      { "v": "L",       "map": "LEFT" },
+      { "v": "STRAIGHT",   "map": "STRAIGHT" },
+      { "v": "S",       "map": "STRAIGHT" },
+      { "v": "RIGHT",    "map": "RIGHT"  },
+      { "v": "R",       "map": "RIGHT"  },
+      { "v": "BACK",       "map": "BACK"  }
     ],
 
     "rooms": {
@@ -18,23 +17,18 @@
         "desc": "This is the place to start!",
         "exits": [
           {
-            "verb": "NORTH",
+            "verb": "LEFT",
             "target": "LOC2",
             "condition": ""
           },
           {
-            "verb": "SOUTH",
-            "target": "LOC2",
+            "verb": "STRAIGHT",
+            "target": "LOC3",
             "condition": ""
           },
           {
-            "verb": "WEST",
-            "target": "LOC2",
-            "condition": ""
-          },
-          {
-            "verb": "EAST",
-            "target": "LOC2",
+            "verb": "RIGHT",
+            "target": "LOC4",
             "condition": ""
           }
         ],
@@ -42,10 +36,110 @@
       },
       "LOC2": {
         "name": "Location 2",
-        "desc": "Here is the second location.",
+        "desc": "You are headed to a field.",
         "exits": [
+          {
+            "verb": "BACK",
+            "target": "START",
+            "condition": ""
+          },
+          {
+            "verb": "RIGHT",
+            "target": "LOC2",
+            "condition": ""
+          },
+          {
+            "verb": "STRAIGHT",
+            "target": "FIELD",
+            "condition": ""
+          }
         ],
         "inventory": []
-      }
+      },
+      "LOC3": {
+        "name": "Location 2",
+        "desc": "You are headed toward your house.",
+        "exits": [
+          {
+            "verb": "LEFT",
+            "target": "LOC2",
+            "condition": ""
+          },
+          {
+            "verb": "STRAIGHT",
+            "target": "HOME",
+            "condition": ""
+          },
+          {
+            "verb": "RIGHT",
+            "target": "LOC4",
+            "condition": ""
+          },
+          {
+            "verb": "BACK",
+            "target": "START",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+        "LOC4": {
+          "name": "Location 4",
+          "desc": "You are headed towards the town.",
+          "exits": [
+            {
+              "verb": "LEFT",
+              "target": "LOC3",
+              "condition": ""
+            },
+            {
+              "verb": "STRAIGHT",
+              "target": "CITY",
+              "condition": ""
+            }
+            {
+              "verb": "BACK",
+              "target": "START",
+              "condition": ""
+            }
+          ],
+          "inventory": []
+        },
+        "FIELD": {
+          "name": "Field",
+          "desc": "You are inside the field of grass. /nNothing is around you",
+          "exits": [
+            {
+              "verb": "BACK",
+              "target": "LOC2",
+              "condition": ""
+            }
+          ],
+          "inventory": []
+        },
+        "HOME": {
+          "name": "Home",
+          "desc": "You are right inside of your home. /nYou feel tired from a long day.",
+          "exits": [
+            {
+              "verb": "BACK",
+              "target": "LOC3",
+              "condition": ""
+            }
+          ],
+          "inventory": []
+        },
+        "CITY": {
+          "name": "City",
+          "desc": "You are in the city. /n You start to feel hungry.",
+          "exits": [
+            {
+              "verb": "BACK",
+              "target": "LOC4",
+              "condition": ""
+            }
+          ],
+          "inventory": []
+        }
     }
   }

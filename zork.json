@@ -1,137 +1,39 @@
 {
     "verbs": [
-      {
-        "v": "EXITS",
-        "map": "EXITS"
-      },
-      {
-        "v": "QUIT",
-        "map": "QUIT"
-      },
-      {
-        "v": "Q",
-        "map": "QUIT"
-      },
-      {
-        "v": "GET ME OUT OF HERE!",
-        "map": "QUIT"
-      },
-      {
-        "v": "NORTH",
-        "map": "NORTH"
-      },
-      {
-        "v": "N",
-        "map": "NORTH"
-      },
-      {
-        "v": "SOUTH",
-        "map": "SOUTH"
-      },
-      {
-        "v": "S",
-        "map": "SOUTH"
-      },
-      {
-        "v": "EAST",
-        "map": "EAST"
-      },
-      {
-        "v": "E",
-        "map": "EAST"
-      },
-      {
-        "v": "WEST",
-        "map": "WEST"
-      },
-      {
-        "v": "W",
-        "map": "WEST"
-      },
-      {
-        "v": "NE",
-        "map": "NE"
-      },
-      {
-        "v": "NORTHEAST",
-        "map": "NE"
-      },
-      {
-        "v": "NW",
-        "map": "NW"
-      },
-      {
-        "v": "NORTHWEST",
-        "map": "NW"
-      },
-      {
-        "v": "SE",
-        "map": "SE"
-      },
-      {
-        "v": "SOUTHEAST",
-        "map": "SE"
-      },
-      {
-        "v": "SOUTHWEST",
-        "map": "SW"
-      },
-      {
-        "v": "UP",
-        "map": "UP"
-      },
-      {
-        "v": "U",
-        "map": "UP"
-      },
-      {
-        "v": "DOWN",
-        "map": "DOWN"
-      },
-      {
-        "v": "D",
-        "map": "DOWN"
-      },
-      {
-        "v": "ENTER",
-        "map": "ENTER"
-      },
-      {
-        "v": "OUT",
-        "map": "OUT"
-      },
-      {
-        "v": "EXIT",
-        "map": "EXIT"
-      },
-      {
-        "v": "LEAVE",
-        "map": "LEAVE"
-      },
-      {
-        "v": "LAND",
-        "map": "LAND"
-      },
-      {
-        "v": "#!#!#",
-        "map": "#!#!#"
-      },
-      {
-        "v": "LAUNC",
-        "map": "LAUNC"
-      },
-      {
-        "v": "CROSS",
-        "map": "CROSS"
-      },
-      {
-        "v": "TAKE",
-        "map": "TAKE"
-      },
-      {
-        "v": "GET",
-        "map": "TAKE"
-      }
+      { "v": "EXITS",  "map": "EXITS"},
+      { "v": "QUIT",  "map": "QUIT"},
+      { "v": "Q",  "map": "QUIT"},
+      { "v": "GET ME OUT OF HERE!",  "map": "QUIT"},
+      { "v": "NORTH",  "map": "NORTH"},
+      { "v": "N",  "map": "NORTH"},
+      { "v": "SOUTH",  "map": "SOUTH"},
+      { "v": "S",  "map": "SOUTH"},
+      { "v": "EAST",  "map": "EAST"},
+      { "v": "E",  "map": "EAST"},
+      { "v": "WEST",  "map": "WEST"},
+      { "v": "W",  "map": "WEST"},
+      { "v": "NE",  "map": "NE"},
+      { "v": "NORTHEAST",  "map": "NE"},
+      { "v": "NW",  "map": "NW"},
+      { "v": "NORTHWEST",  "map": "NW"},
+      { "v": "SE",  "map": "SE"},
+      { "v": "SOUTHEAST",  "map": "SE"},
+      { "v": "SOUTHWEST",  "map": "SW"},
+      { "v": "UP",  "map": "UP"},
+      { "v": "U",  "map": "UP"},
+      { "v": "DOWN",  "map": "DOWN"},
+      { "v": "D",  "map": "DOWN"},
+      { "v": "ENTER",  "map": "ENTER"},
+      { "v": "OUT",  "map": "OUT"},
+      { "v": "EXIT",  "map": "EXIT"},
+      { "v": "LEAVE",  "map": "LEAVE"},
+      { "v": "LAND",  "map": "LAND"},
+      { "v": "#!#!#",  "map": "#!#!#"},
+      { "v": "LAUNC",  "map": "LAUNC"},
+      { "v": "CROSS",  "map": "CROSS"},
+      { "v": "TAKE",  "map": "TAKE"},
+      { "v": "GET",  "map": "TAKE"}
+      
     ],
     "rooms": {
       "WHOUS": {
