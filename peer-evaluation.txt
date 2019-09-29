@@ -1,0 +1,37 @@
+Name: Omar Salinas
+Date: 9/28/2019
+Project: 03-Text Adventures
+Peer's repository: https://github.com/CaptAwesomeMG13/03-Text-adventure.git
+
+
+
+What is something you learned by reviewing your peer's project?
+I learned some more ways to imporove my text adventures game. I learned that I could have incorporated a points score in the game to award achieving the end in fewer steps.
+ 
+
+What is something you saw in your peer's project that you would like to apply to your own programming projects?
+I like how he included how to win the game in the readme file. I should have done that. They also added like the game premise and made the game seem fun and easy to play. Just things to ease the player, which I should have added too.
+ 
+
+What suggestions would you have for your peer to improve his/her code?
+I would suggest maybe adding some lines of code that deal with maybe keeping track of how far in the game you are. It could easily be done since theres already counters for the moves and points.
+ 
+
+What could have been clearer or better commented?
+There were 2 main.py like files in the repository. So I had to open both of them to see which was the student-made game and which one was the one you made for us to use/sample
+ 
+
+Was there anything in the code that was confusing to you? If so, what?
+Just the fact that there were the 2 main.py files. However this was cleared in the README.md file
+ 
+
+Does the repository contain an appropriate LICENSE?
+Yes it did.
+ 
+
+What is something he/she could add to the README.md to make it more descriptive?
+I think the README.md is actually very well written and scripted. If I could add one thing, maybe it would be a name of the creator or alias to give credit to.
+ 
+
+Pay a compliment to your peer based on the quality of his/her code.
+I liked the backstory of this game a lot. I enjoyed the humor aspects and liked how it was a spin off of the Jake from State Farm commercials.
